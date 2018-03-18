@@ -17,7 +17,7 @@
 		<dependency>
 			<groupId>br.com.caelum</groupId>
 			<artifactId>vraptor</artifactId>
-			<version>${project.version}</version>
+			<version>4.2.0-RC5</version>
 		</dependency>
 
 		<dependency>
@@ -37,6 +37,27 @@
 		    <artifactId>el-api</artifactId>
 		    <version>2.2</version>
 		    <scope>provided</scope>
+		</dependency>
+	
+		<!-- postgresql -->
+		<dependency>
+		    <groupId>postgresql</groupId>
+		    <artifactId>postgresql</artifactId>
+		    <version>9.1-901-1.jdbc4</version>
+		</dependency>
+		
+		<!-- JUnit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+		
+		<!-- Hibernate Core -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>4.3.11.Final</version>
 		</dependency>
 		
 		<dependency>
