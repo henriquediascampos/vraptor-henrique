@@ -2,7 +2,10 @@ package br.com.caelum.vraptor.hibernateUtil;
 
 
 import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.context.RequestScoped;
+import javax.enterprise.inject.Produces;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -12,6 +15,13 @@ import org.hibernate.service.ServiceRegistry;
 public class HibernateUtil {
 	private static SessionFactory fabricaDeSessoes = criarFabricaDeSessoes();
 
+	@Produces
+	@RequestScoped
+	public Session getCurrentSession() {
+		Session session = fabricaDeSessoes.openSession();
+		return session;
+	}
+	
 	public static SessionFactory getFabricaDeSessoes() {
 		return fabricaDeSessoes;
 	}
