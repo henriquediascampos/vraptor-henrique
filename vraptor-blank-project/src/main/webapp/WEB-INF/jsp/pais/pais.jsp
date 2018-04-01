@@ -5,17 +5,18 @@
 <head>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 <script type="text/javascript"  src="jquery-3.3.1.min.js"></script>
-<script type="text/javascript"  src="jquery-3.3.1.min.map"></script>
+<!-- <script type="text/javascript"  src="jquery-3.3.1.min.map"></script> -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <title>pais</title>
 </head>
 <body>
     It works!! ${variable}
-    
+      
     <input id="nomePais" type="text">
+    <br>
     <button id="btnBuscar">buscar</button>	
 	
 </body>
 </html>
-<script type="text/javascript"  src="js/pais.js"></script>
+<script type="text/javascript"  src="js/pages/pais.js"></script>
