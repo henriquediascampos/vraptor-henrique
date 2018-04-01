@@ -4,9 +4,9 @@
 
 $(document).ready(function(){
     $("#btnBuscar").click(function(){
-      var pais = $("#nomePais").val();
-      teste(pais);
-    });
+      var nome = $("#nomePais").val();
+      teste(nome);
+    }); 
 });
 
 function buscar(){ 
@@ -15,8 +15,7 @@ function buscar(){
 
 }
 
-function teste(pais){
-  nome= pais;
+function teste(nome){
   data = {nome};
   $.get("pais/salvar", data,
   function(data){

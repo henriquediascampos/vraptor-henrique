@@ -11,12 +11,14 @@
 <title>pais</title>
 </head>
 <body>
-    It works!! ${variable}
-      
-    <input id="nomePais" type="text">
-    <br>
-    <button id="btnBuscar">buscar</button>	
-	
+    <fieldset > <title>teste</title>
+        <br>
+    <h1 class="text-size-15">It PATOS!! ${variable}</h1>
+    <br>      
+    <input id="nomePais" type="text"> 
+    <br>    
+    <button id="btnBuscar">buscar</button>
+</fieldset>
 </body>
 </html>
 <script type="text/javascript"  src="js/pages/pais.js"></script>
